@@ -4,7 +4,7 @@ project "GLFW"
     staticruntime "off"
 	warnings "off"
 
-	targetdir("%{wks.location}/bin/" .. OutputDir .. "/%{prj.name}")
+    targetdir("%{wks.location}/bin/" .. OutputDir .. "/%{prj.name}")
     objdir("%{wks.location}/bin/int" .. OutputDir .. "/%{prj.name}")
 
     files
@@ -16,7 +16,7 @@ project "GLFW"
         "src/init.c",
         "src/input.c",
         "src/monitor.c",
-        "src/"internal.h,
+        "src/internal.h",
         "src/platform.h",
         "src/vulkan.h",
         "src/window.c",
