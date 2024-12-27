@@ -50,6 +50,14 @@ project "GLFW"
 			"_GLFW_COCOA"
 		}
 
+		links
+		{
+		  "Cocoa.framework",
+		  "OpenGL.framework",
+		  "IOKit.framework",
+		  "CoreFoundation.framework",
+		}
+
    filter "configurations:Debug"
         defines { "DEBUG", "TZ_DEBUG" }
         runtime "Debug"
